@@ -1,0 +1,64 @@
+private void changeIfNumbersIncorrectInInnerRow(int i, int wichnumber, int n) {
+        Math.random();
+        Random rand=new Random();
+        
+            ITile previous=tiles[innerRecources[(i-1+n)%innerRecources.length].x][innerRecources[(i-1+n)%innerRecources.length].y];
+            if(previous.getNumber()==6||previous.getNumber()==8){
+                int j=rand.nextInt(outerRecources.length);
+                ITile other=tiles[outerRecources[j].x][outerRecources[j].y];
+                int tmp=previous.getNumber();
+                previous.setNumber(other.getNumber());
+                other.setNumber(tmp);
+            }
+            previous=tiles[outerRecources[(i*2)%outerRecources.length].x][outerRecources[(i*2)%outerRecources.length].y];
+            if(previous.getNumber()==6||previous.getNumber()==8){
+                int j=rand.nextInt(outerRecources.length);
+                ITile other=tiles[outerRecources[j].x][outerRecources[j].y];
+                int tmp=previous.getNumber();
+                previous.setNumber(other.getNumber());
+                other.setNumber(tmp);
+            }
+            previous=tiles[outerRecources[(i*2+1)%outerRecources.length].x][outerRecources[(i*2+1)%outerRecources.length].y];
+            if(previous.getNumber()==6||previous.getNumber()==8){
+                int j=rand.nextInt(outerRecources.length);
+                ITile other=tiles[outerRecources[j].x][outerRecources[j].y];
+                int tmp=previous.getNumber();
+                previous.setNumber(other.getNumber());
+                other.setNumber(tmp);
+            }
+            previous=tiles[outerRecources[(i*2-1)%outerRecources.length].x][outerRecources[(i*2-1)%outerRecources.length].y];
+            if(previous.getNumber()==6||previous.getNumber()==8){
+                int j=rand.nextInt(outerRecources.length);
+                ITile other=tiles[outerRecources[j].x][outerRecources[j].y];
+                int tmp=previous.getNumber();
+                previous.setNumber(other.getNumber());
+                other.setNumber(tmp);
+            }
+            
+        
+    }
+
+//    private boolean changeIfNumbersIncorrectInInnerRow(int i, int n) {
+//        
+//        if(tiles[innerRecources[(i-1+n/2)%innerRecources.length].x][innerRecources[(i-1+n/2)%innerRecources.length].y].getNumber()==6||
+//           tiles[innerRecources[(i-1+n/2)%innerRecources.length].x][innerRecources[(i-1+n/2)%innerRecources.length].y].getNumber()==8||
+//           tiles[outerRecources[(i*2+n)%outerRecources.length].x][outerRecources[(i*2+n)%outerRecources.length].y].getNumber()==6||
+//           tiles[outerRecources[(i*2+n)%outerRecources.length].x][outerRecources[(i*2+n)%outerRecources.length].y].getNumber()==8||
+//           tiles[outerRecources[(i*2+1+n)%outerRecources.length].x][outerRecources[(i*2+1+n)%outerRecources.length].y].getNumber()==6||
+//           tiles[outerRecources[(i*2+1+n)%outerRecources.length].x][outerRecources[(i*2+1+n)%outerRecources.length].y].getNumber()==8||
+//           tiles[outerRecources[(outerRecources.length+i*2-1)%outerRecources.length].x][outerRecources[(outerRecources.length+i*2-1)%outerRecources.length].y].getNumber()==6||
+//           tiles[outerRecources[(outerRecources.length+i*2-1)%outerRecources.length].x][outerRecources[(outerRecources.length+i*2-1)%outerRecources.length].y].getNumber()==8){
+//            //placeNumbers(rand.nextInt(6)*2);
+//            System.out.println(innerRecources[(i+n/2+1)%innerRecources.length].x+"  "+innerRecources[(i+n/2+1)%innerRecources.length].y+"   "+outerRecources[(i*2)%outerRecources.length].x+outerRecources[(i*2)%outerRecources.length].y);
+//            System.out.println("haha");
+//            return false;
+//            
+//        }
+//        return false;
+        
+        
+            
+        
+    
+
+    

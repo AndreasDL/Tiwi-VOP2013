@@ -1,0 +1,119 @@
+ _____________________________________________________________________________
+|                                                                             |
+|                VERWIJDER DIT BESTAND NIET, MAAR PAS HET AAN!                |
+|_____________________________________________________________________________|
+
+Een van de doelen van het Vakoverschrijdend eindproject is dat er te allen
+tijde werkende code beschikbaar moet zijn. De klanten, maar vooral de coaches,
+willen deze dan ook op eender welk moment zelf kunnen compileren en uitvoeren.
+
+Documenteer daarom in dit bestand hoe de verschillende onderdelen van het
+project gecompileerd en uitgevoerd kunnen worden, en wat de vereisten daarvoor
+zijn. Vermeld dus alle benodigde bibliotheken, bestanden, randvoorwaarden,
+initialisatiestappen enzovoort.
+
+Stel het opstellen van dit bestand niet uit tot het einde van een sprint, laat
+staan tot het einde van het project!
+
+De precieze indeling en opmaak van dit bestand zijn van gering belang. Zorg er
+echter wel voor dat de gevraagde informatie duidelijk naar voor komt, en wijzig
+de bestandsnaam (install.txt) niet.
+
+-------------------------------------------------------------------------------
+SPRINT3
+
+LOKAAL
+------
+Zorg ervoor dat Catan/client.ClientController als BASE_URI="http://localhost:8084/webresources" heeft
+Zorg er ook voor dat de CatanServer/Web_Pages.META-INF.context.xml path="".
+Zorg ook dat de Tomcat draait op poort 8084 (in netbeans -> Tool > Servers > Server Port: 8084)
+
+Zet bij Catan/demos.MakeBoardDemo in de main, gameId=1 (= spel met 2 spelers)
+
+Clean build CatanDB
+
+Clean build CatanBase
+
+Clean build CatanServer
+
+Clean build Catan
+
+Je kan make_database.pl gebruike om de volledige db te resetten of clear_game1.pl om gameID=1 te resetten
+
+Laat het programma lopen, en als er om een id gevraagd wordt geef dan 2 in, en bij de andere speler 3.
+
+Als beide spelers opgestart zijn, zal het spel starten.
+
+
+INTERNET
+--------
+
+Zorg ervoor dat Catan/client.ClientController als BASE_URI="http://stable.team02.vop.tiwi.be/game/webresources" heeft
+
+Clean build CatanDB
+
+Clean build CatanBase
+
+Clean build CatanServer
+
+Clean build Catan
+
+Kopiëer Catan/target/Catan-1.0-SNAPSHOT-jar-with-dependencies.jar naar CatanWebsite\src\main\webapp\LastWork.jar
+
+Deploy Catanserver en Catanwebsite
+
+Registreer/Log in op de website
+
+Maak een spel aan via de lobby
+
+Na het starten van de jnlp vink "ik vertrouw..." aan en druk run
+
+SPRINT2
+
+build catanbase
+
+build catanserver
+
+deploy catanserver via goals
+
+build catan
+
+ga catan/target, kopieer de jar met dependencies naar CatanWebsite\src\main\webapp
+
+en verander naam naar LastWork.jar
+
+deploy catanwebsite via goals
+
+via Webstart maak lobby aan op website druk op play en download jnlp
+
+vink "ik vertrouw ..." aan en druk run
+
+Bij het lokaal runnen kan je de invoerparameters aanpassen in MakeBoardDemo in het catanproject
+
+
+
+
+SPRINT1
+
+open Maven Project in Netbeans 
+
+ga naar onze git repository
+
+hier zou je Catan/ moeten kunnen selecteren als project
+
+Als het project geopend is in Netbeans:
+
+Indien het main class set is druk dan F6
+
+Indien je moet kiezen tussen main classes, kies dan MakeBoardDemo.java
+en druk nog eens F6 als er niets gebeurt
+
+Indien bovenstaande niet werkt open dan de project tree aan de linkerkant
+
+zoek in Source Packages naar de package demos
+
+hierin staat MakeBoardDemo.java
+
+rechtsklik hierop en druk op run file
+
+het spel zou gestart moeten zijn

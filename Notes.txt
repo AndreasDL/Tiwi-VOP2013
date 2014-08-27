@@ -1,0 +1,88 @@
+SPRINT1
+
+- hide/show
+
+- middenbord groter
+
+- highlighten
+
+
+- achtergrond van spelbord	//Andreas
+
+
+SPRINT2:
+
+Random kleur voor speler en indien tijd over gebruiker laten kiezen
+
+nog geen rekening houden met speler die weggaat of als spel gdn is
+
+altijd uitgaan van best case scenario :)
+
+Tegenspelers zien: enkel hoeveel grondstoffn je hebt
+
+highlighten van mogelijke constructieplaatsen gebeurt door op huis te klikken
+
+Spel moet speelbaar zijn voor 2 tot 4 spelers
+
+Spellen die bezig zijn moeten ook getoond worden in gamelobby
+
+spel selecteren door dubbelklik
+
+in de lijst met games een join knop voorzien per regel
+
+max aantal spelers kunnen ingeven
+
+create in de lijst 
+
+geen wachtwoordbeschermende wachtkamer
+
+kick rights voorzien
+
+geen chatsysteem
+
+snelste reactie bekijken aan clientside
+
+Lijst in lobby zien wie in het spel zit.
+
+Controleren of een speler zich slecht bij 1 spel kan aansluiten
+wachtkamer verlaatbaar maken
+=> join game => wachtkamer van spel 
+	=> terug naar lobby = leave game
+
+volgorde weergeven
+
+volgorde zelf moet random zijn
+
+geen grondstoffen wegnemen bij tegenspeler (als de rover verzet wordt).
+
+2e taal = frans => vooral accenten zijn belangrijk
+
+logging (nog niet noodzakelijk, maar zal in 3e sprint zowieso gevraagd worden).
+=>wat? acties (zie richtlijnen) zoals binnenkomen en verlaten wachtkamer en zeven gooien die dingen.
+=> pas na sprint 3 gechecked
+
+
+mail uniek name uniek ok => bij toevoegen nog is kijken met vrs statussen
+
+pass 6 chars  alfanumeriek cijfers en letters
+
+spelers zichtbaar host eerst
+
+selectie gerolde tegels behouden
+
+pc niet laten controleren als trade gdn wordt, anders weet je impliciet als  die speler de grondstoffen heeft
+
+rover zwart laten
+
+
+SPRINT3
+
+geen geel gebruiken
+
+gekregen grondstoffen een andere achtergrond geven ipv rode omkadering
+
+tekst in messagepanel groter
+
+geen htmlinjectie mogelijk maken
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Team02</groupId>
+  <artifactId>Catan</artifactId>
+  <name>Catan</name>
+  <version>1.0-SNAPSHOT</version>
+  <url>http://maven.apache.org</url>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>1.7.1</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <excludes>
+                  <exclude>bouncycastle:bcprov-jdk15</exclude>
+                </excludes>
+              </artifactSet>
+              <transformers>
+                <transformer>
+                  <mainClass>com.main.MyMainClass</mainClass>
+                </transformer>
+                <transformer>
+                  <resource>properties.properties</resource>
+                </transformer>
+                <transformer>
+                  <resource>applicationContext.xml</resource>
+                </transformer>
+                <transformer>
+                  <resource>META-INF/cxf/cxf.extension</resource>
+                </transformer>
+                <transformer>
+                  <resource>META-INF/cxf/bus-extensions.xml</resource>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+</project>
+

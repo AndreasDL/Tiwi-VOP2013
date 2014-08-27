@@ -1,0 +1,11 @@
+#lblPeriod{
+    float: left;
+    margin-right: 20px;
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+#optPeriod{
+    width: 180px;
+    float: left;
+}

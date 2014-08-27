@@ -1,0 +1,106 @@
+ _____________________________________________________________________________
+|                                                                             |
+|                VERWIJDER DIT BESTAND NIET, MAAR PAS HET AAN!                |
+|_____________________________________________________________________________|
+
+Zoals jullie intussen weten, zullen de coaches doorheen het Vakoverschrijdend
+eindproject de code meermaals evalueren. Ze zullen daarbij onder andere dit
+bestand consulteren, waarin te allen tijde de voornaamste wijzigingen te vinden
+moeten zijn die het project sinds zijn aanvang doorliep.
+
+Enkele voorbeelden van zulke wijzigingen zijn het toevoegen van een klasse aan
+het model, het toepassen van een welbepaald design pattern om een probleem op
+te lossen, het wijzigen van de werking van een methode enzovoort. Cosmetische
+wijzigingen, zoals een nieuw kleurtje of een opgeloste spelfout, hoeven
+daarentegen niet gedocumenteerd te worden; die volgen uit de Git-historiek.
+
+Stel het opstellen van dit bestand niet uit tot het einde van een sprint, laat
+staan tot het einde van het project!
+
+De precieze indeling en opmaak van dit bestand zijn van gering belang. Zorg er
+echter wel voor dat de gevraagde informatie duidelijk naar voor komt (bv. door
+updates in omgekeerd chronologische volgorde op te lijsten), en wijzig de
+bestandsnaam (changelog.txt) niet.
+-------------------------------------------------------------------------------
+
+
+
+--VUL HIER VERDER AAN--
+10/05
+Samuel:	alles wordt nu eerst op server gecontroleerd
+
+04/05
+Samuel:	chatten is geïnplementeerd
+
+23/04
+Samuel:	meeste ontwikkelingskaarten zijn grotendeels geïmplementeerd
+
+28/03:
+Jens:	jar is nu executable
+Jens:	Informatiepaneel toont nu ook de andere spelers.
+
+
+20/03
+jens: beurten werken
+
+19/03
+jens/samuel: otherplayerstate implemented
+
+13/07
+jens: eerste versie Rest server werkt
+
+
+07/03
+Samuel: Er verschijnen confirmationdialogs.
+
+
+05/03
+Samuel/Jens: Steden kunnen geplaatst worden.
+
+
+02/03
+Jens:	-EastPanel aangemaakt om StructurePanel en ActionPanel samen te zetten.
+Jens:	-utility klasse Layout aangemaakt voor standaard Border,kleuren,...
+
+01/03
+Jens:	-StructurePanel aangemaakt om aantal structures left te tonen.
+
+28/02
+Jens:	-DiceDemo heeft nu ook roads toegevoegd aan model
+Jens:	-Buildfuncties in Player opgesplitst in 2 functies elk
+Jens:	-checkRoadPossible/checkSettlementPossible (en startfuncties) houden nu rekening met als
+	 er al een road/settlement staat
+Jens:	-Er wordt gecheckt als er genoeg resources zijn en verwijdert als
+	 er nieuwe settlement gebouwd wordt
+	
+
+27/02
+	-Player maakt nu gebruik van een Bank om te kijken als er nog genoeg 
+	 grondstofkaarten over zijn en om bank up te daten
+
+23/02
+	- Enum Resources deleted.
+	- Alles maakt nu gebruik van TileType (ipv Resources)
+	- TileTypenamen worden omgezet door config.properties
+	- Rollen met dobbelsteen mogelijk, er worden grondstofkaarten uitgedeeld bij settlement
+	- Player is Oberservable geworden
+	- PlayerPanel is Observer geworden
+	- DiceDemo aangemaakt om dobbelen te testen (hardcoded gevuld, mockup'ish)
+
+
+21/02
+	- ResourcePanel maakt nu gebruik van een IPlayer				     --Jens
+
+
+20/02
+	- IDevCard, CardDeck, KnightCard, ScoreCard, EvolveCard aangemaakt. 		     --Jens
+		(enkel header, nog geen implementatie)
+	- Player verder aangevuld met methodes om grondstoffen toe te voegen/te verwijderen  --Jens
+	- Player gedocumenteerd								     --Jens
+	- ResourcePanel aangepast aan enumklasse Resources. Roept nu namen van de 	     --Jens
+	  grondstoffen op uit die enumklasse.
+
+
+19/02
+	- Enumklasse Resources aangemaakt met de namen van de grondstoffen.	 	     --Jens
+	

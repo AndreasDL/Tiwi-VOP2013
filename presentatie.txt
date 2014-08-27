@@ -1,0 +1,67 @@
+volgende zaken aan bod komen:
+
+abstract in het Nederlands én in het Engels (ca. 200 woorden);
+situering;
+taakverdeling binnen het team (a.d.h.v. backlogs);
+analyse (use cases, mockups, diagrammen … met toelichting);
+interessantste ontwerpbeslissingen (o.a. design patterns);
+interessantste implementatiekeuzes (bv. bibliotheken);
+kwaliteitscontrole (methodologie m.b.t. testen);
+gekende problemen, verbeterpunten en uitbreidingsmogelijkheden;
+nabeschouwing en besluit.
+
+
+
+
+Inleiding Catan
+
+screenshots van website 
+	- Inlogscherm
+	- registratie,mailverificatie
+	- blocking
+	- grafieken
+	- lobby
+screenshots van spel 
+	- wachtscherm
+	- oude pics van spel
+	- eindresultaat
+
+
+features verwezenlijkt andreas
+	- ruilen
+	- facebook (registratie)
+	- restart app/server
+	- ontwikkelingskaarten
+	- bescherming tegen malafide nepclients
+	- spectator
+	- autoreject
+	- chatten
+	- historiek
+	- evolutie games
+	- blokkeren gebruikers
+MVC + eigen observers
+statendiagram
+staten op client
+alles serverside
+commando's
+klasse Layout, centralisering vars
+Enums voor versch types (kaarten,grondstoffen,structures)
+tooltippaneel
+interfaceadapter
+highlighten
+hashing
+beginbord opslaan
+bescherming tegen malafide nepclients: meer uitleg
+
+
+Verslag
+
+manier van bouwen/controleren
+
+eigen observer
+
+- manier van commando's opslaan in db
+
+verslag
+titel
+implementatiekeuzes

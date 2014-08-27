@@ -1,0 +1,47 @@
+schetsen voorzien van hoe db eruit ziet			//tom
+
+kleur op website					//tom
+
+server logging						//andreas busy
+
+layout							//andreas
+
+automatisch nieuwste Catanjar gebruiken			//?
+
+Spectator layout
+
+Spel eindigen						//?
+
+historiek vn spel bekijken				//?
+
+databank testen (DbUnit)				//?
+
+error message indien geen connectie met server		//?	
+
+meer constanten gebruiken				//iedereen
+
+commentaar aanvullen					//iedereen
+
+klassendiagram
+
+createNewBoard aanpassen voor website op einde	
+
+getmodel aanpassen zodat weer veilig is (einde)
+
+update bij nemen resource van bank
+
+update bij kopen devcard
+
+update bij addvictorypoint
+
+update bij removedevcard
+
+update bij addknight?
+
+stealresource
+
+knoppen disablen in giveresourcecommandstuff
+
+bankupdate na traden bank
+
+maximaliseren van het spel

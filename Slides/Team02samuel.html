@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+	<html class="decks present">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>VOP: Slides</title>
+		<meta name="description" content="Slides">
+		<link rel="stylesheet" href="css/reveal.min.css" />
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style>
+		.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
+			text-transform: none;
+		}
+		</style>
+		</head>
+	<body class="reveal-viewport theme-font-league theme-color-grey-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section><section><h2>Sprint 1</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9198/sprint1.png" style=""><br>
+</div></section><section><h2>Sprint 1</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9201/sprint11.png" style=""><br>
+</div></section><section><h2>Sprint 1</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9202/sprint12.png" style=""><br>
+</div></section><section><h2>Sprint 1</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9203/sprint13.png" style=""><br>
+</div></section><section><h2>Site</h2>
+<div>
+<img src="img/login.png" style=""><br>
+</div></section><section><h2>Site</h2>
+<div>
+<img src="img/registreer.png" style=""><br>
+</div></section><section><h2>Sprint 3</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9205/wachten.PNG" style=""><br>
+</div></section><section><h2>Sprint 3</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9206/sprint3.PNG" style=""><br>
+</div></section><section><h2>Sprint 3</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9208/highlight.PNG" style=""><br>
+</div></section><section><h2>Sprint 3</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9209/roadhighlight.PNG" style=""><br>
+</div></section><section><h2>Sprint 3</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9210/gamefase.PNG" style=""><br>
+</div></section><section><h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9213/tooltip.png" style=""><br>
+</h2></section><section><h2><br></h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9216/bankruil.PNG" style=""><div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9217/playertrade.png" style=""><br>
+</div></section><section><h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9218/ruilvoorstel.PNG" style=""><br>
+</h2></section><section><h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9219/ontwkaarten.PNG" style=""><br>
+</h2></section><section><h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9220/bankwegother.PNG" style=""><br>
+</h2></section><section><h2>Statendiagram<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9943/statendiagrampp.jpg" style="">
+</h2></section><section><h2>Voorbeeld staat</h2>
+<div><pre><code class="java">public class ExampleState extends StandardState {
+    @Override 
+    public ICommand aMethod {}
+    @Override 
+    public ICommand bMethod {}
+    @Override 
+    public void goNextState() {
+        getController().setstate(...);
+    }
+}</code></pre></div>
+<div style="text-align: left;"><ul>
+<li style="white-space: pre-wrap;">standardState bevat alle lege methodes</li>
+<li style="white-space: pre-wrap;">methodes die toegelaten zijn in een staat worden daar overschreven</li>
+<li style="white-space: pre-wrap;">goNextState bevat de logica om naar de volgende staat te gaan</li>
+</ul></div></section><section><h2>Vervoegen</h2>
+<div style="text-align: left;">
+<ul>
+<li>
+<span>Bedoeling?</span><br>
+</li>
+<li style="text-align: left;"><span>Laatste commando</span></li>
+</ul>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9125/restoreState.PNG" style="height: 46px;"><br>
+</div>
+<div>
+<ul><li>Gevolg? </li></ul>
+<div><br></div>
+<ul><li>Speciale gevallen:</li></ul>
+<br>
+</div>
+<div><ul>
+<li style="margin-left:30px"><span>Ruilen</span></li>
+<li style="margin-left:30px"><span>Ontwikkelingskaarten</span></li>
+</ul></div>
+</div></section><section><h2>Vervoegen na serverrestart</h2>
+<div><div style="text-align: left;">
+    <ul>
+<li>Alles bijhouden in databank</li>
+        <li>           Starttoestand</li>
+        <li>           Commando's</li>
+</ul>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9133/DatabankBor.PNG" style="height: 131px;"><br><div>
+    </div>
+        <div style="text-align: left;"><ul>
+<li>
+<span>Aanmaken bord</span><br>
+</li>
+<li><span>Herconstrueren</span></li>
+<li><span>Verbetering?</span></li>
+</ul></div>
+</div>
+</section><section><h2>Volledig bord</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9135/volledigbord.PNG" style=""><br>
+</div></section><section><h2>Starttoestand</h2>
+<div>
+    <ul>
+<li>
+            <span>           startpositie tegels nummeren</span>
+            <br>
+</li>
+        <li>
+            <span>           startspeler</span>
+            <br>
+</li>
+        <li>
+            <span>           dobbelsteenseed</span>
+            <br>
+</li>
+        <li>
+            <span>           posities van de tegels</span>
+        </li>
+    </ul>
+</div>
+<div style="text-align: left;">
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9134/StartForm.PNG" style="height: 320px;"><br>
+</div>
+</section><section><h2>DoCommand</h2>
+<div><br></div>
+<div style="text-align: left;"><ul>
+<li style="font-size: 36px; font-style: normal; font-variant: normal;">alle acties in commandos verpakken<br>
+</li>
+<li style="font-size: 36px; font-style: normal; font-variant: normal;">alleen commandos moeten verstuurd worden naar server</li>
+<li style="font-size: 36px; font-style: normal; font-variant: normal;">server: command.executeserver oproepen</li>
+</ul></div>
+<div><pre><code class="java">public void DoCommand(@PathParam("id") int id, String scommand, 
+                      @Context HttpServletRequest req) {     
+HttpSession session = req.getSession();
+User u = (User) session.getAttribute("user");
+if(u != null && u.getGameid() == id){          	  
+	ICommand command=gson.fromJson(scommand, ICommand.class);
+	Board model = models.get(id); //geeft juiste spel
+	if(command.executeServer(model)){ //voert commando uit
+		model.addCommand(command); //bewaart commandop model
+		dao.insertCommand(id, model.getCommandSize(),scommand); 
+		//voegt commando toe aan databank
+	}
+}
+}</code></pre></div></section><section><h2>InterfaceAdapter</h2>
+<div style="text-align: left;">
+<ul>
+<li>Herconstructie interface uit JSON</li>
+<li>JSON serializer en deserializer</li>
+</ul>
+<div><br></div>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9139/InterfaceAdapter.PNG" style="height: 383px;"><br>
+</div>
+</div></section><section><h2>InterfaceAdapter</h2>
+<div style="text-align: left;">
+<ul>
+<li style="font-size: 36px; font-style: normal; font-variant: normal;">Herconstructie interface uit JSON</li>
+<li style="font-size: 36px; font-style: normal; font-variant: normal;">JSON serializer en deserializer</li>
+<li style="font-size: 36px; font-style: normal; font-variant: normal;">GsonBuilder</li>
+</ul>
+<br>
+</div>
+<div style="text-align: left;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9138/gsonbuilder.PNG" style=""><br>
+</div>
+<div style="text-align: left;">
+<ul>
+<li>Opm: ToJson class vermelden</li>
+<li>voorbeeld:</li>
+</ul>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9144/voorbeeldJSON.PNG" style="width: 890px;"><br><br>
+</div></section><section><h2><span>Centralisatie van constanten en tekst</span></h2>
+<div style="text-align: left;">
+<ul>
+<li>Layoutklasse</li>
+<li>Property files</li>
+<li><span>Enums:</span></li>
+<li style="margin-left:30px"><span><span style="font-size: 36px; font-style: normal; font-variant: normal;">Panelen maken gebruik van naam</span></span></li>
+<li style="margin-left:30px"><span>worden gebruikt als index voor tabellen</span></li>
+<li style="margin-left:30px"><span style="font-size: 36px; font-style: normal; font-variant: normal;"></span>vb <pre><code class="java">public enum Structure {
+    ROAD(0),
+    SETTLEMENT(1),   
+    CITY(2);
+    private final int value;
+    Structure(int value){
+        this.value=value;
+    }
+    public int getValue(){
+        return value;
+    }
+}</font></pre>
+</li>        
+</ul>
+<div style="text-align: left;"><br></div>
+<div><br></div>
+<div><br></div>
+</div></section><section><h2>Afbeeldingen van constructies</h2>
+<div style="text-align: left;">
+<ul>
+<li>Alle kleuren beschikbaar maken</li>
+<li>Witte afbeelding met transparante achtergrond</li>
+</ul>
+<div><br></div>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9180/road.png" style=""><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9181/settlement.png" style=""><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9182/city.png" style=""><br>
+</div>
+<div><ul><li>FilteredImage + RGBFilter</li></ul></div>
+</div>
+<div style="text-align: left;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/team02vop/images/9186/filterRGB.PNG" style="width: 616px;"><br>
+</div></section><section><h2><br></h2>
+<div style="text-align: left;"><br></div></section></section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js" type="text/javascript"></script>
+<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					//{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					//{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+				
+			});
+
+		</script>
+</body>
+</html>
+

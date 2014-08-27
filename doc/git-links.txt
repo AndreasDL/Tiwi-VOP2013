@@ -1,0 +1,8 @@
+Hieronder vind je een aantal links die je verder op weg kunnen helpen met Git.
+Je kunt deze het best in de opgegeven volgorde bestuderen.
+
+http://git-scm.com/book                       minimaal hoofdstuk 1, 2, 3 en 5
+https://help.github.com/articles/set-up-git   uitgebreider dan in het boek
+https://vop.tiwi.be/publieke-sleutel/         sterk aanbevolen
+https://git.wiki.kernel.org/index.php/GitFaq  nuttige achtergrond
+http://www.gitready.com/                      voor beginners en gevorderden
